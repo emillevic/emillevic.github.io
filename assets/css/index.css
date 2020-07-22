@@ -1,0 +1,55 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#fff;
+}
+span.material-icons{
+    font-size: 34px;
+    color: #000;
+}
+.links a{
+    padding-right: 20px;
+
+}
+.picture{
+    width: 300px;
+    height: 300px;
+}
+.picture img{
+    object-fit: cover;
+}
+.products{
+    position: relative;
+    margin-bottom: 10px;
+}
+.products img{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    max-width: 100%;
+}
+.products .middle{
+ transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.products:hover img {
+    opacity: 0.4;
+    filter: blur(1px);
+}
+  
+.products:hover .middle {
+    opacity: 1;
+}
+
+.products .middle span{
+  color: rgb(44, 44, 44);
+  font-size: 30px;
+}
+
